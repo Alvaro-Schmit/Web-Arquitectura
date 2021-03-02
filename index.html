@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+</head>
+
+<body>
+    <main>
+        <div class="content-all">
+            <input type="checkbox" id="check">
+            <label for="check">
+            <img src="./icon/menu.png" alt="menu" class="menuhamburguesa"></label>
+            <div class="logo">
+                <img id="logo" src="./logo/WhatsApp Image 2020-12-31 at 14.00.44.jpeg" alt="">
+                <h5 id="nombre">GONZALO SILVA</h5>
+                <h6 id="estudio">ESTUDIO DE ARQUITECTURA</h6>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a> </li>
+                    <li>
+                        <a href="./paginas/proyectos.html"> Proyectos</a></li>
+                    <li>
+                        <a href="./paginas/obras.html">Obras</a> </li>
+                    <li>
+                        <a href="./paginas/renders.html">Renders</a> </li>
+                    <li>
+                        <a href="./paginas/contacto.html"> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./image/carousel/Fachada principal casas modernas de homify moderno _ homify (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Casa en Barrio privado de Punta del Este</h3>
+                    <p>
+                        <a href="./Proyectos/casaEnPunta.html" class="btn btn-primary my-2">Ver Proyecto</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./image/carousel/pexels-binyamin-mellish-106399 (2).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Casa en Barrio privado de Punta del Este</h3>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Ver Proyecto</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/carousel/stephan-bechert-yFV39g6AZ5o-unsplash (3).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Casa en Barrio privado de Punta del Este</h3>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Ver Proyecto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+
+    <div id="masProyectos">
+
+        <h1>Arquitectura de vanguardia.</h1>
+
+        <p class="parrafo">aqui va una descripcion que haga referencia a lo destacado de la arquitectura de la empresa Something short and leading about the collection <span>below—its contents, the creator, etc. Make it short and sweet, but not too short so folks
+            don’t simply skip over it entirely.</span></p>
+
+    </div>
+
+
+
+    <section class="galeriaGrid">
+
+        <div id="card-01">
+            <a href="./Proyectos/casaEnPunta copy 6.html">
+                <img class="efecto_imagen" src="./image/pexels-adrien-olichon-3709404.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <div id="card-02">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-alex-1732414.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <div class="video">
+            <a href="./Proyectos/casaEnPunta.html"></a>
+            <video src="./video/video.mp4" autoplay loop muted></video>
+            <h3 id="h3video">Casa modelo el Jose Ignacio</h3>
+
+            <p id="text-card-video">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        </div>
+
+        <div id="card-03">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-vlado-paunovic-3034343.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <div id="card-04">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-expect-best-323772.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <div id="card-05">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-expect-best-323776.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        </div>
+
+
+        <div id="card-06">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-expect-best-323780 (1).jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <div id="card-07">
+            <a href="./Proyectos/casaEnPunta.html">
+                <img class="efecto_imagen" src="./image/pexels-julia-kuzenkov-1974596.jpg" alt="">
+            </a>
+            <h3>Casa modelo el Jose Ignacio</h3>
+
+            <p class="text-card">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+    </section>
+    <section>
+        <div class="container-video">
+            <video src="./video/pexels-polina-kovaleva-5644278.mp4" autoplay loop muted></video>
+            <div id="info-video">
+                <h3>Informacion del video</h3>
+                <p>Lorem Lorem ipsum dolor sit amet eprehenderit, sunt aut. Eaque nihil illo nostrum. ipsum dolor sit amet consectetur adipisicing elit. Maxime, officiis. Consequuntur, harum. Hic labore, magnam vel fugiat quas tenetur quasi placeat inventore
+                    perferendis veniam blanditiis amet rerum libero atque nemo.</p>
+
+                <a href="./Proyectos/galeriaVideo.html" class="btn btn-primary my-2">Ver Proyecto</a>
+
+            </div>
+    </section>
+    <footer>
+        <h6>e-mail: arqgonzalosilva@gmail.com</h6>
+
+        <img src="./logo/WhatsApp Image 2020-12-31 at 14.00.44.jpeg" alt="">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    
+    main {
+        margin-top: 40px;
+    }
+    
+    #logo {
+        width: 150px;
+        margin-top: 1vh;
+    }
+    
+    #logoFooter {
+        width: 5%;
+    }
+    
+    .content-all {
+        width: 100%;
+    }
+    
+    .logo {
+        width: 160px;
+        margin-top: 26px;
+        margin-left: 3vw;
+        display: block;
+        text-align: center;
+    }
+    
+    #nombre {
+        margin-top: 1.2vh;
+        font-size: 15px;
+        z-index: 30;
+        font-family: 'Shippori Mincho B1', serif;
+    }
+    
+    #estudio {
+        font-size: 10px;
+        z-index: 30;
+        font-family: 'Shippori Mincho B1', serif;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    #check:checked~.menu {
+        width: 460px;
+    }
+    
+    #check:checked~.nombre {
+        color: #d4e7f7;
+    }
+    
+    #check:checked~.logo {
+        visibility: hidden;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0px;
+        width: 0px;
+        height: 100vh;
+        background: white;
+        transition: all 500ms cubic-bezier(1, 0, 0, 1);
+        overflow: hidden;
+        opacity: 0.8;
+        z-index: 20;
+    }
+    
+    .menu ul {
+        padding-left: 0px;
+    }
+    
+    .menu li {
+        font-family: 'Shippori Mincho B1', serif;
+        list-style: none;
+        padding: 16px;
+        padding-left: 20%;
+        color: #0d0e0e;
+        cursor: pointer;
+        transition: all 300ms;
+        display: block;
+        width: 450px;
+        font-size: 50px;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: #0d052b !important;
+    }
+    
+    .menu li:hover {
+        background: rgba(60, 60, 65, 0.2);
+        margin-left: 0px;
+    }
+    
+    .content-all label {
+        position: fixed;
+        top: 50px;
+        right: 0%;
+        font-size: 35px;
+        color: black;
+        cursor: pointer;
+        z-index: 10;
+        width: 10%;
+    }
+    
+    .content-all h2 {
+        position: fixed;
+        width: 100%;
+        top: 14px;
+        right: 60%;
+        font-size: 26px;
+        text-align: right;
+        color: black;
+    }
+    
+    .menuhamburguesa {
+        border: solid #e5ebff 0.2px;
+        border-radius: 7px;
+        padding: 2px;
+        width: 50px;
+        z-index: 10;
+    }
+    
+    .menuhamburguesa:hover {
+        width: 40%;
+        height: 40%;
+        background-color: rgba(60, 60, 65, 0.1);
+        border: solid 2px rgba(60, 60, 65, 0.4);
+    }
+    
+    .img_index {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .w-100 {
+        width: 100% !important;
+        margin-top: 3%;
+    }
+    /*contacto*/
+    
+    .formulario {
+        border-radius: 5px;
+        width: 50%;
+        margin: 0% 25% 0% 25%;
+    }
+    
+    form label {
+        color: rgb(47, 50, 56);
+        ;
+        font-size: 140%;
+    }
+    
+    form input {
+        font-size: 120%;
+    }
+    
+    form textarea {
+        font-size: 140%;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 3px solid rgba(24, 23, 23, 0.4);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    .carousel-caption {
+        padding-bottom: 0.1rem;
+        background: rgba(204, 204, 204, 0.3);
+        border-radius: 8px;
+    }
+    
+    #masProyectos {
+        margin-top: 8vh;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    #masProyectos h1 {
+        font-size: 40px;
+        margin-bottom: 18px;
+        font-family: 'Shippori Mincho B1', serif;
+        color: rgb(47, 50, 56);
+    }
+    
+    #masProyectos .parrafo {
+        font-size: 25px;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Shippori Mincho B1', serif;
+        color: rgb(47, 50, 56);
+    }
+    
+    .fondo_contacto {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        z-index: -10;
+        opacity: .4;
+    }
+    
+    .text-muted {
+        color: rgba(0, 0, 0, 0.8) !important;
+        font-weight: 500;
+    }
+    
+    .efecto_imagen {
+        border: solid rgba(0, 0, 0, 0.4) 1px;
+        border-radius: 0.5%;
+        transition: opacity;
+    }
+    
+    .efecto_imagen:hover {
+        cursor: pointer;
+        border: solid rgba(0, 0, 0, 0.9) 1.3px;
+        opacity: 0.85;
+        border-radius: 0.5%;
+        box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.75);
+        transform: scale3d(1.02, 1.01, 1);
+    }
+    
+    .card-body {
+        margin: 0%;
+        padding: 0;
+        border: solid rgba(0, 0, 0, 0.2) 0.5px;
+        border-radius: 0.5%;
+        margin-bottom: 5%;
+    }
+    
+    .card-body p::first-line {
+        font-weight: 700;
+    }
+    
+    .card-body p {
+        margin: 5%;
+    }
+    
+    footer {
+        width: 90%;
+        margin: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer h6::first-letter {
+        font-size: 24px;
+    }
+    
+    footer h6::first-letter {
+        font-weight: 800;
+    }
+    
+    footer h6 {
+        margin-left: 3%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .renders {
+        background-color: rgba(253, 208, 247, 0.2);
+    }
+    
+    .galeriaGrid h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        height: 10%;
+        font-family: 'Shippori Mincho B1', serif;
+    }
+    
+    .galeriaGrid p {
+        font-size: 14px;
+        text-align: center;
+        height: 20%;
+        margin-bottom: 0;
+        font-family: 'Shippori Mincho B1', serif;
+    }
+    
+    .galeriaGrid img {
+        height: 70%;
+    }
+    /*////////////////////////////////////////*/
+    
+    .galeriaGrid {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        box-sizing: border-box;
+        padding: 26px;
+    }
+    
+    #card-01 {
+        grid-area: 1/1/2/2;
+    }
+    
+    #card-02 {
+        grid-area: 2/1/3/2;
+    }
+    
+    #card-03 {
+        grid-area: 1/2/2/3;
+    }
+    
+    #card-04 {
+        grid-area: 2/2/3/3;
+    }
+    
+    #card-05 {
+        grid-area: 3/1/4/2;
+    }
+    
+    #card-06 {
+        grid-area: 3/2/4/3;
+    }
+    
+    #card-07 {
+        grid-area: 3/3/4/4;
+    }
+    
+    .galeriaGrid img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    .video {
+        grid-area: 1/3/3/4;
+        box-sizing: border-box;
+    }
+    
+    .video,
+    video {
+        width: 100%;
+        height: 91.5%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    #text-card-video {
+        height: 12%;
+    }
+    
+    #h3video {
+        margin: 0;
+        height: 6%;
+    }
+    
+    .carousel-caption {
+        font-family: 'Shippori Mincho B1', serif;
+        font-size: 20px;
+        color: rgb(47, 50, 56);
+    }
+    
+    footer {
+        padding-top: 16vh;
+        padding-bottom: 5vh;
+    }
+    
+    footer img {
+        width: 80px;
+    }
+    /*/////////////////////////VIDEO FOOTER/////////////////*/
+    
+    .container-video {
+        background-color: rgba(119, 112, 101, 0.1);
+        width: 96%;
+        height: 50vh;
+        margin: auto;
+        margin-top: 4vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 5px;
+        border: solid 3px rgba(119, 112, 101, 0.1);
+        box-sizing: border-box;
+    }
+    
+    .container-video video {
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    #info-video {
+        margin-top: 1%;
+        width: 40%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .btn {
+        height: 40px;
+    }
