@@ -1,0 +1,178 @@
+                                .galeriaGrid {
+                                    width: 100%;
+                                    height: auto;
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    grid-template-rows: repeat(3, 1fr);
+                                    grid-gap: 20px;
+                                    box-sizing: border-box;
+                                    padding: 26px;
+                                }
+                                
+                                #card-01 {
+                                    grid-area: 1/1/2/2;
+                                }
+                                
+                                #card-02 {
+                                    grid-area: 1/2/2/3;
+                                }
+                                
+                                #card-03 {
+                                    grid-area: 1/3/2/4;
+                                }
+                                
+                                #card-04 {
+                                    grid-area: 2/1/3/2;
+                                }
+                                
+                                #card-05 {
+                                    grid-area: 2/2/3/3;
+                                }
+                                
+                                #card-06 {
+                                    grid-area: 2/3/3/4;
+                                }
+                                
+                                #card-07 {
+                                    grid-area: 3/1/4/2;
+                                }
+                                
+                                #card-08 {
+                                    grid-area: 3/2/4/3;
+                                }
+                                
+                                #card-09 {
+                                    grid-area: 3/3/4/4;
+                                }
+                                
+                                .galeriaGrid img {
+                                    width: 100%;
+                                    height: 70%;
+                                    object-fit: cover;
+                                    box-sizing: border-box;
+                                }
+                                /*///////////////////////////////////////////////////////////////////////////////////*/
+                                /* .menuhamburguesa */
+                                /* XS */
+                                /*/////////////////////////GRID///////////////////////////*/
+                                
+                                @media only screen and (min-width: 0px) and (max-width: 481px) {
+                                    .galeriaGrid {
+                                        width: 100%;
+                                        height: auto;
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr);
+                                        grid-template-rows: repeat(9, 1fr);
+                                        grid-gap: 0px;
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                    }
+                                    #card-01 {
+                                        grid-area: 1/1/2/4;
+                                    }
+                                    #card-02 {
+                                        grid-area: 2/1/3/4;
+                                    }
+                                    #card-03 {
+                                        grid-area: 3/1/4/4;
+                                    }
+                                    #card-04 {
+                                        grid-area: 4/1/5/4;
+                                    }
+                                    #card-05 {
+                                        grid-area: 5/1/6/4;
+                                    }
+                                    #card-06 {
+                                        grid-area: 6/1/7/4;
+                                    }
+                                    #card-07 {
+                                        grid-area: 7/1/8/4;
+                                    }
+                                    #card-08 {
+                                        grid-area: 8/1/9/4;
+                                    }
+                                    #card-09 {
+                                        grid-area: 9/1/10/4;
+                                    }
+                                }
+                                
+                                .galeriaGrid img {
+                                    width: 100%;
+                                    height: 60%;
+                                    object-fit: cover;
+                                    box-sizing: border-box;
+                                }
+                                
+                                .galeriaGrid h3 {
+                                    margin-top: 5px;
+                                    margin-bottom: 0px;
+                                    font-size: 16px;
+                                    height: 13%;
+                                }
+                                /* md */
+                                /*//////////////////////////////////////////////////////////8*/
+                                /*///////////////////////////////////////////////////////////*/
+                                
+                                @media only screen and (min-width: 481px) and (max-width: 922px) {
+                                    .galeriaGrid {
+                                        width: 100%;
+                                        height: auto;
+                                        display: grid;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        grid-template-rows: repeat(4, 1fr);
+                                        grid-gap: 20px;
+                                        box-sizing: border-box;
+                                        padding: 26px;
+                                    }
+                                    #card-01 {
+                                        grid-area: 1/1/2/3;
+                                    }
+                                    #card-02 {
+                                        grid-area: 1/3/2/5;
+                                    }
+                                    #card-03 {
+                                        grid-area: 2/1/3/3;
+                                    }
+                                    #card-04 {
+                                        grid-area: 2/3/3/5;
+                                    }
+                                    #card-05 {
+                                        grid-area: 3/1/4/3;
+                                    }
+                                    #card-06 {
+                                        grid-area: 3/3/4/5;
+                                    }
+                                    #card-07 {
+                                        grid-area: 4/1/5/3;
+                                    }
+                                    #card-08 {
+                                        grid-area: 4/3/5/5;
+                                    }
+                                    #card-09 {
+                                        grid-area: 4/1/5/3;
+                                    }
+                                }
+                                /*/////////////////////////////////////////////////////////////////////////*/
+                                
+                                .galeria__gral {
+                                    width: 98%;
+                                    margin: auto;
+                                    list-style: none;
+                                    padding: 10px;
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                }
+                                
+                                .galeria__gral li {
+                                    margin: 5px;
+                                    margin-top: 20px;
+                                }
+                                
+                                .galeria__gral img {
+                                    width: 370px;
+                                    height: 180px;
+                                }
+                                /*////////////////////////////////////////////////////*/

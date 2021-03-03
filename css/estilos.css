@@ -406,6 +406,16 @@
         box-sizing: border-box;
     }
     
+    .perfil {
+        width: 50%;
+        height: 90%;
+        object-fit: cover;
+        box-sizing: border-box;
+        background-color: rgba(204, 204, 204, 0.3);
+        text-align: center;
+        margin: 20px;
+    }
+    
     #info-video {
         margin-top: 1%;
         width: 40%;
@@ -461,7 +471,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
     
     .modal1 h3 {
