@@ -262,11 +262,11 @@
         justify-content: space-between;
     }
     
-    footer h6::first-letter {
+    footer h6:first-letter {
         font-size: 24px;
     }
     
-    footer h6::first-letter {
+    footer h6:first-letter {
         font-weight: 800;
     }
     

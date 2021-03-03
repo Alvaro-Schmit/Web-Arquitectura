@@ -2,6 +2,16 @@
     /* XS */
     
     @media only screen and (min-width: 0px) and (max-width: 481px) {
+        .menu li {
+            padding: 16px;
+            padding-left: 20%;
+            width: 50%;
+            font-size: 30px;
+        }
+        #check:checked~.menu {
+            width: 65%;
+        }
+        /*////////////////////////////////////////////////////////////////*/
         .container-video p {
             display: none;
         }
@@ -215,6 +225,17 @@
             height: 35px;
         }
     }
+    
+    .menu li {
+        padding: 10px;
+        padding-left: 20%;
+        width: 50%;
+        font-size: 35px;
+    }
+    
+    #check:checked~.menu {
+        width: 50%;
+    }
     /*///////////////////////////////////////////////////////////*/
     
     @media only screen and (min-width: 623px) and (max-width: 922px) {
@@ -255,7 +276,7 @@
         }
         .container-video video {
             width: 100%;
-            height: 40vh;
+            height: 60vh;
             object-fit: cover;
             box-sizing: border-box;
         }
