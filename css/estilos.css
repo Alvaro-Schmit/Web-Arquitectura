@@ -36,13 +36,11 @@
         margin-top: 1.2vh;
         font-size: 15px;
         z-index: 30;
-        font-family: 'Shippori Mincho B1', serif;
     }
     
     #estudio {
         font-size: 10px;
         z-index: 30;
-        font-family: 'Shippori Mincho B1', serif;
     }
     
     #check {
@@ -78,7 +76,6 @@
     }
     
     .menu li {
-        font-family: 'Shippori Mincho B1', serif;
         list-style: none;
         padding: 16px;
         padding-left: 20%;
@@ -195,8 +192,7 @@
     #masProyectos h1 {
         font-size: 40px;
         margin-bottom: 18px;
-        font-family: 'Shippori Mincho B1', serif;
-        color: rgb(47, 50, 56);
+        color: rgba(47, 50, 56, 0.9);
     }
     
     #masProyectos .parrafo {
@@ -204,7 +200,6 @@
         margin-bottom: 0;
         padding-left: 10px;
         padding-right: 10px;
-        font-family: 'Shippori Mincho B1', serif;
         color: rgb(47, 50, 56);
     }
     
@@ -285,7 +280,6 @@
         font-size: 20px;
         text-align: center;
         height: 10%;
-        font-family: 'Shippori Mincho B1', serif;
     }
     
     .galeriaGrid p {
@@ -293,7 +287,6 @@
         text-align: center;
         height: 20%;
         margin-bottom: 0;
-        font-family: 'Shippori Mincho B1', serif;
     }
     
     .galeriaGrid img {
@@ -370,7 +363,6 @@
     }
     
     .carousel-caption {
-        font-family: 'Shippori Mincho B1', serif;
         font-size: 20px;
         color: rgb(47, 50, 56);
     }
