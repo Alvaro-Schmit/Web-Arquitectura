@@ -371,7 +371,9 @@
                 margin: 0;
                 height: 6%;
             }
-        }
+          .modal1 h3{
+              font-size: smaller;
+          }
         /*/////////////////////////////////////////////////////////////////////////*/
         
         .galeria__gral {
@@ -394,7 +396,7 @@
         .galeria__gral img {
             width: 370px;
             height: 180px;
-        }
+        }}
         /*////////////////////////////////////////////////////*/
         
         @media only screen and (min-width: 923px) {
