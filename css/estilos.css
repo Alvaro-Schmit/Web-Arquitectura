@@ -432,28 +432,6 @@
     .btn {
         height: 40px;
     }
-    /*////////////////////////////////////////////////////*/
-    
-    .galeria__gral {
-        width: 98%;
-        margin: auto;
-        list-style: none;
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .galeria__gral li {
-        margin: 5px;
-        margin-top: 20px;
-    }
-    
-    .galeria__gral img {
-        width: 370px;
-        height: 180px;
-    }
-    /*////////////////////////////////////////////////////*/
+  
+   
    
