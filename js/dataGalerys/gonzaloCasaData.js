@@ -67,3 +67,14 @@ let gonzaloCasaData = [
 
 ]
 
+
+
+   
+   
+   
+   
+   let idGaleryGonzaloCasa =document.getElementById("idGaleryGonzaloCasa")
+   loadGalery(idGaleryGonzaloCasa,gonzaloCasaData)
+
+
+
