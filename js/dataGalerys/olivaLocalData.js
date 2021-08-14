@@ -47,14 +47,7 @@ let olivaLocalData = [
 
 ]
 
-
-
-   
-   
-   
-   
-   let idGaleryOlivaLocal =document.getElementById("idGaleryOlivaLocal")
-   loadGalery(idGaleryOlivaLocal,olivaLocalData)
+ loadGalery("idGaleryOlivaLocal",olivaLocalData)
 
 
 

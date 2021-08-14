@@ -26,14 +26,8 @@ let grisCasaData = [
      }
 ]
 
+loadGalery("idGaleryGrisCasa",grisCasaData)
 
-
-   
-   
-   
-   
-   let idGaleryGrisCasa =document.getElementById("idGaleryGrisCasa")
-   loadGalery(idGaleryGrisCasa,grisCasaData)
 
 
 

@@ -63,13 +63,7 @@ let pilotisCasaData = [
 ]
 
 
-
-   
-   
-   
-   
-   let idGaleryPilotisCasa =document.getElementById("idGaleryPilotisCasa")
-   loadGalery(idGaleryPilotisCasa,pilotisCasaData)
+loadGalery('idGaleryPilotisCasa',pilotisCasaData)
 
 
 

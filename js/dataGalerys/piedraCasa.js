@@ -111,14 +111,7 @@ let piedraCasaData = [
      }
 ]
 
-
-
-   
-   
-   
-   
-   let idGaleryPiedraCasa =document.getElementById("idGaleryPiedraCasa")
-   loadGalery(idGaleryPiedraCasa,piedraCasaData)
+ loadGalery('idGaleryPiedraCasa',piedraCasaData)
 
 
 

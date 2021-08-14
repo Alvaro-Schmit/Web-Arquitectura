@@ -77,7 +77,4 @@ let barrioPribadoData = [
 
 ]
 
-
-
-let idGaleryBarrioPrivado =document.getElementById("idGaleryBarrioPrivado")
-loadGalery(idGaleryBarrioPrivado,barrioPribadoData)
+loadGalery("idGaleryBarrioPrivado",barrioPribadoData)

@@ -62,14 +62,7 @@ let hermanaGonCasaData = [
 
 ]
 
-
-
-   
-   
-   
-   
-   let idGaleryHermanaGonCasa =document.getElementById("idGaleryHermGonCasa")
-   loadGalery(idGaleryHermanaGonCasa,hermanaGonCasaData)
+   loadGalery("idGaleryHermanaGonCasa",hermanaGonCasaData)
 
 
 
