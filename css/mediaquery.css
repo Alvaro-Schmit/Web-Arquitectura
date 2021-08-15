@@ -103,10 +103,10 @@
         @media only screen and (min-width: 0px) and (max-width: 481px) {
             .galeriaGrid {
                 width: 100%;
-                height: auto;
+                height: autox;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
+                grid-template-rows: repeat(9, 1fr);
                 grid-gap: 0px;
                 box-sizing: border-box;
                 padding: 0;
@@ -115,27 +115,29 @@
                 grid-area: 1/1/2/4;
             }
             #card-02 {
-                grid-area: 3/1/4/4;
+                grid-area: 2/1/3/4;
             }
             #card-03 {
-                grid-area: 4/1/5/4;
+                grid-area: 3/1/4/4;
             }
             #card-04 {
-                grid-area: 5/1/6/4;
+                grid-area: 4/1/5/4;
+            }
+            #video {
+                grid-area: 5/1/7/4;
+                box-sizing: border-box;
             }
             #card-05 {
-                grid-area: 6/1/7/4;
+                grid-area: 7/1/8/4;
             }
             #card-06 {
-                grid-area: 7/1/8/4;
+                grid-area: 8/1/9/4;
             }
             #card-07 {
                 grid-area: 9/1/10/4;
             }
-            #video {
-                grid-area: 2/1/3/4;
-                box-sizing: border-box;
-            }
+            
+
             .galeriaGrid img {
                 width: 100%;
                 height: 60%;
@@ -162,6 +164,22 @@
             }
             #h3video {
                 margin-bottom: 14px;
+            }
+            footer{
+                margin:5vw
+            }
+            footer img{
+                width: 46px;
+                height: 22px;
+
+               
+                
+            }
+            footer p{
+                font-size: 12px;
+            }
+            .container-video{
+                margin-top: 10vh;
             }
         }
         /* md */

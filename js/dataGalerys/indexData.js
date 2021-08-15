@@ -3,7 +3,7 @@ let indexData = [
        'id':'card-01',
        'class':'efecto_imagen',
        'href':'./Proyectos/piedraCasa.html',
-       'picture':'./image/Destacadas/4712.jpg'
+       'picture':'./image/Destacadas/4712ajuste.jpg'
        },
     {
         'id':'card-02',

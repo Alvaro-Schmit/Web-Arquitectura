@@ -7,6 +7,6 @@ let loadGaleryIndex = (id,object)=>{
   </div>`
       
     })};  
-console.log(indexData);
+
  
     loadGaleryIndex("galeriaIndex",indexData)
