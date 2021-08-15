@@ -101,6 +101,14 @@
         /*/////////////////////////GRID///////////////////////////*/
         
         @media only screen and (min-width: 0px) and (max-width: 481px) {
+            
+            #carouselExampleDark{
+                display: none;
+            }
+            #carouselExampleMovil{
+                display: block;
+            }
+            
             .galeriaGrid {
                 width: 100%;
                 height: autox;

@@ -442,6 +442,10 @@
     .btn {
         height: 40px;
     }
+
+    #carouselExampleMovil{
+        display: none;
+    }
   
    
    
