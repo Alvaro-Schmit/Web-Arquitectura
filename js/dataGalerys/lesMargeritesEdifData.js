@@ -109,5 +109,44 @@ let lesMargeritesEdifData = [
 
    loadGalery("idLesMargeritesEdif",lesMargeritesEdifData)
 
+   
+/*Abre el Lightbox*/
+
+const imagenesLesMargeritesedif = document.querySelectorAll('#idLesMargeritesEdif img');
+
+const abreLightboxLesMargeritesedif = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesLesMargeritesedif).indexOf(event.target);
+ };
+ 
+ imagenesLesMargeritesedif.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxLesMargeritesedif);
+ });
+
+ const adelantaImagenLesMargeritesedif = () => {
+   if (indiceImagen === imagenesLesMargeritesedif.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesLesMargeritesedif[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenLesMargeritesedif);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenLesMargeritesedif = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesLesMargeritesedif.length;
+   }
+   imagenActiva.src = imagenesLesMargeritesedif[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenLesMargeritesedif);
+
+
 
 

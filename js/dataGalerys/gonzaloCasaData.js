@@ -71,3 +71,44 @@ let gonzaloCasaData = [
 
 
 
+     
+   
+/*Abre el Lightbox*/
+
+const imagenesGonzaloCasa = document.querySelectorAll('#idGaleryGonzaloCasa img');
+
+const abreLightboxGonzaloCasa = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesGonzaloCasa).indexOf(event.target);
+ };
+ 
+ imagenesGonzaloCasa.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxGonzaloCasa);
+ });
+
+ const adelantaImagenGonzaloCasa = () => {
+   if (indiceImagen === imagenesGonzaloCasa.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesGonzaloCasa[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenGonzaloCasa);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenGonzaloCasa = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesGonzaloCasa.length;
+   }
+   imagenActiva.src = imagenesGonzaloCasa[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenGonzaloCasa);
+
+
+

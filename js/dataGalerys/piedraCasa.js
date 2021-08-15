@@ -114,4 +114,40 @@ let piedraCasaData = [
  loadGalery('idGaleryPiedraCasa',piedraCasaData)
 
 
+/*Abre el Lightbox*/
+
+const imagenesPiedraCasa = document.querySelectorAll('#idGaleryPiedraCasa img');
+
+const abreLightboxPiedraCasa = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesPiedraCasa).indexOf(event.target);
+ };
+ 
+ imagenesPiedraCasa.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxPiedraCasa);
+ });
+
+ const adelantaImagenPiedraCasa = () => {
+   if (indiceImagen === imagenesPiedraCasa.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesPiedraCasa[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenPiedraCasa);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenPiedraCasa = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesPiedraCasa.length;
+   }
+   imagenActiva.src = imagenesPiedraCasa[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenPiedraCasa);
 

@@ -51,3 +51,41 @@ let olivaLocalData = [
 
 
 
+/*Abre el Lightbox*/
+
+const imagenesOlivaLocal = document.querySelectorAll('#idGaleryOlivaLocal img');
+
+const abreLightboxOlivaLocal = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesOlivaLocal).indexOf(event.target);
+ };
+ 
+ imagenesOlivaLocal.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxOlivaLocal);
+ });
+
+ const adelantaImagenOlivaLocal = () => {
+   if (indiceImagen === imagenesOlivaLocal.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesOlivaLocal[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenOlivaLocal);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenOlivaLocal = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesOlivaLocal.length;
+   }
+   imagenActiva.src = imagenesOlivaLocal[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenOlivaLocal);
+
+

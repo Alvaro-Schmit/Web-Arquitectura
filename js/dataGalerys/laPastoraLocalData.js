@@ -45,5 +45,47 @@ let laPastoraLocalData = [
 
    loadGalery("idLaPastoraLocal",laPastoraLocalData)
 
+   
+   
+/*Abre el Lightbox*/
+
+const imagenesLaPastora = document.querySelectorAll('#idLaPastoraLocal img');
+
+const abreLightboxLaPastora = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesLaPastora).indexOf(event.target);
+ };
+ 
+ imagenesLaPastora.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxLaPastora);
+ });
+
+ const adelantaImagenLaPastora = () => {
+   if (indiceImagen === imagenesLaPastora.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesLaPastora[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenLaPastora);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenLaPastora = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesLaPastora.length;
+   }
+   imagenActiva.src = imagenesLaPastora[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenLaPastora);
+
+
+
+
 
 

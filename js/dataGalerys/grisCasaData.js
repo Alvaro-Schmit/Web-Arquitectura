@@ -29,5 +29,46 @@ let grisCasaData = [
 loadGalery("idGaleryGrisCasa",grisCasaData)
 
 
+     
+   
+/*Abre el Lightbox*/
+
+const imagenesGrisCasa = document.querySelectorAll('#idGaleryGrisCasa img');
+
+const abreLightboxGrisCasa = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesGrisCasa).indexOf(event.target);
+ };
+ 
+ imagenesGrisCasa.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxGrisCasa);
+ });
+
+ const adelantaImagenGrisCasa = () => {
+   if (indiceImagen === imagenesGrisCasa.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesGrisCasa[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenGrisCasa);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenGrisCasa = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesGrisCasa.length;
+   }
+   imagenActiva.src = imagenesGrisCasa[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenGrisCasa);
+
+
+
 
 

@@ -78,3 +78,46 @@ let barrioPribadoData = [
 ]
 
 loadGalery("idGaleryBarrioPrivado",barrioPribadoData)
+
+
+     
+   
+/*Abre el Lightbox*/
+
+const imagenesBarrioPrivado = document.querySelectorAll('#idGaleryBarrioPrivado img');
+
+const abreLightboxBarrioPrivado = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesBarrioPrivado).indexOf(event.target);
+ };
+ 
+ imagenesBarrioPrivado.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxBarrioPrivado);
+ });
+
+ const adelantaImagenBarrioPrivado = () => {
+   if (indiceImagen === imagenesBarrioPrivado.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesBarrioPrivado[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenBarrioPrivado);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenBarrioPrivado = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesBarrioPrivado.length;
+   }
+   imagenActiva.src = imagenesBarrioPrivado[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenBarrioPrivado);
+
+
+

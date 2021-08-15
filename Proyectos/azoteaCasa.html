@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Arq. Gonzalo Silva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/galerias.css">
 </head>
@@ -27,19 +32,19 @@
                     <li>
                         <a href="../index.html">Inicio</a> </li>
                     <li>
-                        <a href="../proyectos.html"> Proyectos</a></li>
+                        <a href="../paginas/proyectos.html"> Proyectos</a></li>
                     <li>
-                        <a href="../obras.html">Obras</a> </li>
+                        <a href="../paginas/obras.html">Obras</a> </li>
                     <li>
-                        <a href="../renders.html">Renders</a> </li>
+                        <a href="../paginas/renders.html">Renders</a> </li>
                     <li>
-                        <a href="../contacto.html"> Contacto</a></li>
+                        <a href="../paginas/contacto.html"> Contacto</a></li>
                 </ul>
             </nav>
     </main>
     <br>
 
-        <section class="jumbotron text-center">
+        <section class=" text-center">
             <div class="container-fluid">
                 <br>
                 <h1>Casa en Barrio Privado de Punta del Este</h1>
@@ -48,16 +53,14 @@
             </div>
     
             <div class="container">
-                <p class="textoDeProyectos"><span style="color: black;">Principios del proyecto</span> Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely. Lorem
+                <h6 class="textoDeProyectos"><span style="color: black;
+                                                        font-weight: 700;"
+                                                        
+                    >Principios del proyecto</span> Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely. Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem praesentium dolore minus sit iste quos at illo velit? Hic officia quo deleniti iure, repellat officiis! Cupiditate nostrum repellendus commodi laudantium quam neque
                     ullam perferendis saepe est aliquid? Sapiente, quo exercitationem
-                </p>
+                </h6>
             </div>
-
-         </section>
-
-
-        <section>
 
             <div id="galery">
 
@@ -68,10 +71,19 @@
             </div>
 
         </section>
+        <section id="contenedor-principal">
+            <div id="contenedor-interno">
+                <img id="img-activa" src="../image/casas/gonzaloCasa/3245.jpg" alt="galeria de imagenes">
+                    <button id="btn-cierra" type="button">x</button>
+                    <button id="btn-retrocede" type="button">&lt;</button>
+                    <button id="btn-adelanta" type="button">&gt;</button>
+            </div>
+        </section>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="../js/loadGalery.js"></script>
+    <script src="../js/lightBox.js"></script>
     <script src="../js/dataGalerys/azoteaCasaData.js"></script>
    
     

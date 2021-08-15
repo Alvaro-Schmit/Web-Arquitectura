@@ -66,4 +66,41 @@ let pilotisCasaData = [
 loadGalery('idGaleryPilotisCasa',pilotisCasaData)
 
 
+/*Abre el Lightbox*/
+
+const imagenesPilotis = document.querySelectorAll('#idGaleryPilotisCasa img');
+
+const abreLightbox = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesPilotis).indexOf(event.target);
+ };
+ 
+ imagenesPilotis.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightbox);
+ });
+
+
+ const adelantaImagen = () => {
+   if (indiceImagen === imagenesPilotis.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesPilotis[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagen);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagen = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesPilotis.length;
+   }
+   imagenActiva.src = imagenesPilotis[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagen);
 

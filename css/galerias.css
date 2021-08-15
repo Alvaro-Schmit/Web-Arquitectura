@@ -9,15 +9,107 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
+       
     }
     
-    .galeria__gral li {
-        margin: 5px;
-        margin-bottom: 40px;
-    }
+   
     
     .galeria__gral img {
         width: 370px;
         height: 240px;
+        margin: 5px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        
     }
-   
+   /* Reset Universal */
+/* 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+   */
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+
+  
+#img-activa {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  /*Contenedor Principal del Lightbox*/
+  
+  #contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+    display:none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Contenedor interno del Lightbox*/
+  
+  #contenedor-interno {
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    background: #3f3f3f;
+    width: 66%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Botones*/
+  
+  button {
+    cursor: pointer;
+    background: rgba(36, 37, 41, 0.603);
+    border: none;
+    color: #f3f3f3;
+  }
+  
+  #btn-cierra {
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    line-height: 0px;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 0px;
+    font-size: 3.3rem;
+  }
+  
+  #btn-retrocede {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    font-size: 4rem;
+  }
+  
+  #btn-adelanta {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    font-size: 4rem;
+  }

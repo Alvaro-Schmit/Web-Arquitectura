@@ -65,4 +65,45 @@ let hermanaGonCasaData = [
    loadGalery("idGaleryHermanaGonCasa",hermanaGonCasaData)
 
 
+     
+   
+/*Abre el Lightbox*/
+
+const imagenesHermanaDeGonz = document.querySelectorAll('#idGaleryHermanaGonCasa img');
+
+const abreLightboxHermanaDeGonz = (event) => {
+   imagenActiva.src = event.target.src;
+   lightbox.style.display = 'flex';
+   indiceImagen = Array.from(imagenesHermanaDeGonz).indexOf(event.target);
+ };
+ 
+ imagenesHermanaDeGonz.forEach((imagen) => {
+   imagen.addEventListener('click', abreLightboxHermanaDeGonz);
+ });
+
+ const adelantaImagenHermanaDeGonz = () => {
+   if (indiceImagen === imagenesHermanaDeGonz.length - 1) {
+     indiceImagen = -1;
+   }
+   imagenActiva.src = imagenesHermanaDeGonz[indiceImagen + 1].src;
+   indiceImagen++;
+ };
+ 
+ 
+ btnAdelanta.addEventListener('click', adelantaImagenHermanaDeGonz);
+ 
+ /*Retrocede la Imagen*/
+ 
+ const retrocederImagenHermanaDeGonz = () => {
+   if (indiceImagen === 0) {
+     indiceImagen = imagenesHermanaDeGonz.length;
+   }
+   imagenActiva.src = imagenesHermanaDeGonz[indiceImagen - 1].src;
+   indiceImagen--;
+ };
+ 
+ btnRetrocede.addEventListener('click', retrocederImagenHermanaDeGonz);
+
+
+
 
