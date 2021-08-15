@@ -397,7 +397,7 @@
         width: 96%;
         height: 50vh;
         margin: auto;
-        margin-top: 4vh;
+        margin-top: 0vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -424,7 +424,7 @@
     }
     
     #info-video {
-        margin-top: 1%;
+        margin-top: 5%;
         width: 40%;
         height: auto;
         padding-left: 20px;
