@@ -254,12 +254,18 @@
             .btn {
                 height: 35px;
             }
+        
             .menu li {
+   
                 padding: 10px;
                 padding-left: 20%;
+                color: #0d0e0e;
+                cursor: pointer;
+                transition: all 300ms;
+                display: block;
                 width: 100%;
-                font-size: 35px;
-            }
+                font-size: 36px;
+              }
             
             #check:checked~.menu {
                 width: 65%;
@@ -326,6 +332,20 @@
             }
             .btn {
                 height: 35px;
+            }
+            .menu li {
+   
+                padding: 10px;
+                padding-left: 20%;
+                color: #0d0e0e;
+                cursor: pointer;
+                transition: all 300ms;
+                display: block;
+                width: 100%;
+                font-size: 36px;
+              }
+              #check:checked~.menu {
+                width: 50%;
             }
         }
         
