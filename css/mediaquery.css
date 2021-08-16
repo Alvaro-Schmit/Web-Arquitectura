@@ -186,6 +186,12 @@
             footer p{
                 font-size: 12px;
             }
+            .formulario {
+              
+                width: 80%;
+               
+               
+            }
            
         }
         /* md */
@@ -248,18 +254,22 @@
             .btn {
                 height: 35px;
             }
+            .menu li {
+                padding: 10px;
+                padding-left: 20%;
+                width: 100%;
+                font-size: 35px;
+            }
+            
+            #check:checked~.menu {
+                width: 65%;
+            }
+           
+            
+            
         }
         
-        .menu li {
-            padding: 10px;
-            padding-left: 20%;
-            width: 100%;
-            font-size: 35px;
-        }
-        
-        #check:checked~.menu {
-            width: 65%;
-        }
+       
         /*///////////////////////////////////////////////////////////*/
         
         @media only screen and (min-width: 623px) and (max-width: 922px) {

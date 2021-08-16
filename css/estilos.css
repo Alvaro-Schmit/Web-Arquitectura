@@ -159,7 +159,7 @@
     .formulario {
         border-radius: 5px;
         width: 50%;
-        margin: 0% 25% 0% 25%;
+        margin: auto;
     }
     
     form label {
