@@ -22,27 +22,7 @@
         cursor: pointer;
         
     }
-   /* Reset Universal */
-/* 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-   */
-  body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-
-  
+    
 #img-activa {
     width: 100%;
     height: auto;
@@ -126,5 +106,24 @@ html {
       cursor: pointer;
       
   }
+  .logo {
+    width: 40%;
+    margin-top: 26px;
+    margin-left: 3vw;
+  }
+    #logo {
+      width: 50%;
+      margin-top: 0.5vh;
+    }
+
+    .menuhamburguesa{
+     
+      border-radius: 7px;
+      padding: 2px;
+      width: 50px;
+      margin-right: 2vh;
+     
+  }
+
     
   }
