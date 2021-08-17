@@ -176,9 +176,7 @@
         font-size: 140%;
     }
     
-    input[type=text],
-    select,
-    textarea {
+    .inputForm, textarea {
         width: 100%;
         padding: 12px;
         border: 3px solid rgba(24, 23, 23, 0.4);
